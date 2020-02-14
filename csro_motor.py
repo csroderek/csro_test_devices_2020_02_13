@@ -3,14 +3,13 @@ import threading
 import json
 
 
-class CSRO_Nlight(threading.Thread):
+class CSRO_Motor(threading.Thread):
     def __init__(self, mac, dev_type, num):
         threading.Thread.__init__(self)
         self.device_type = dev_type
         self.mac = mac
         self.channels = num
         self.client = mqtt.Client()
-        self.nlight_status = [0, 0, 0, 0]
 
     def on_connect(self, client, userdata, flags, rc):
         self.client.subscribe('csro/'+self.mac+"/" +
@@ -21,10 +20,12 @@ class CSRO_Nlight(threading.Thread):
                 "name": self.mac + "_"+self.device_type+"_"+str(dev_index),
                 "uniq_id": self.mac + "_"+self.device_type+"_"+str(dev_index),
                 "cmd_t": "~/set/" + str(dev_index),
-                "pl_on": 1,
-                "pl_off": 0,
-                "stat_t": "~/state",
-                "stat_val_tpl": "{{value_json.state["+str(dev_index)+"]}}",
+                "pos_t": "~/state",
+                "val_tpl": "{{value_json.state["+str(dev_index)+"]}}",
+                "pl_open": "open",
+                "pl_stop": "stop",
+                "pl_cls": "close",
+                "dev_cla": "curtain",
                 "avty_t": "~/available",
                 "dev": {
                     "ids": self.mac + "_"+self.device_type,
@@ -35,20 +36,17 @@ class CSRO_Nlight(threading.Thread):
                 }
             }
             json_message = json.dumps(device)
-            self.client.publish("csro/light/"+self.mac+"_"+self.device_type +
+            self.client.publish("csro/cover/"+self.mac+"_"+self.device_type +
                                 "_"+str(dev_index)+"/config", json_message)
         self.client.publish("csro/"+self.mac+"/" +
                             self.device_type+"/available", "online")
         self.update_status()
 
     def on_message(self, client, userdata, msg):
+        print(msg.topic, msg.payload)
         update = False
         for dev_index in range(0, self.channels):
             if str(msg.topic) == str("csro/" + self.mac + "/" + self.device_type+"/set/"+str(dev_index)):
-                if msg.payload.decode('UTF-8') == "0":
-                    self.nlight_status[dev_index] = 0
-                elif msg.payload.decode('UTF-8') == "1":
-                    self.nlight_status[dev_index] = 1
                 update = True
             else:
                 pass
@@ -65,7 +63,7 @@ class CSRO_Nlight(threading.Thread):
 
     def update_status(self):
         state = {
-            "state": self.nlight_status
+            "state": [50, 50]
         }
         state_message = json.dumps(state)
         self.client.publish("csro/"+self.mac+"/" +
