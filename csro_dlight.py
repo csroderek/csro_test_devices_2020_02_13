@@ -42,7 +42,7 @@ class CSRO_Dlight(threading.Thread):
             }
         }
         json_message = json.dumps(device)
-        self.client.publish("csro/light/"+self.mac+"/" +
+        self.client.publish("csro/light/"+self.mac+"_" +
                             self.device_type+"/config", json_message)
         self.client.publish("csro/"+self.mac+"/" +
                             self.device_type+"/available", "online")

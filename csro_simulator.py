@@ -1,6 +1,7 @@
 from csro_nlight import CSRO_Nlight
 from csro_dlight import CSRO_Dlight
 from csro_motor import CSRO_Motor
+from csro_airsys import CSRO_AirSystem
 
 if __name__ == "__main__":
     nlight1 = CSRO_Nlight("abababcdcdcd", "nlight_nb_4k4r", 4)
@@ -18,3 +19,7 @@ if __name__ == "__main__":
     motor1 = CSRO_Motor("00075e4e2d3c", "motor_nb_4k4r", 2)
     motor1.start()
     print("4 started")
+
+    airsys1 = CSRO_AirSystem("00075e4e2e3c", "airsys_csro")
+    airsys1.start()
+    print("5 started")
