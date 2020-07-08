@@ -55,9 +55,9 @@ class CSRO_AirSystem(threading.Thread):
         }
         json_message = json.dumps(device)
         self.client.publish("csro/climate/"+self.mac+"_" +
-                            self.device_type + "/config", json_message)
+                            self.device_type + "/config", json_message, retain=True)
         self.client.publish("csro/"+self.mac+"/" +
-                            self.device_type+"/available", "online")
+                            self.device_type+"/available", "online", retain=True)
         self.update_status()
 
     def on_message(self, client, userdata, msg):

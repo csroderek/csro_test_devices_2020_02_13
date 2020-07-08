@@ -4,22 +4,21 @@ from csro_motor import CSRO_Motor
 from csro_airsys import CSRO_AirSystem
 
 if __name__ == "__main__":
-    nlight1 = CSRO_Nlight("abababcdcdcd", "nlight_nb_4k4r", 4)
-    nlight1.start()
-    print("1 started")
-
-    nlight2 = CSRO_Nlight("abababcdcdce", "nlight_nb_4k4r", 4)
-    nlight2.start()
-    print("2 started")
-
-    dlight1 = CSRO_Dlight("00075e3e2d3c", "dlight_csro_3k3scr")
-    dlight1.start()
-    print("3 started")
-
-    motor1 = CSRO_Motor("00075e4e2d3c", "motor_nb_4k4r", 2)
-    motor1.start()
-    print("4 started")
-
-    airsys1 = CSRO_AirSystem("00075e4e2e3c", "airsys_csro")
-    airsys1.start()
-    print("5 started")
+    CSRO_Nlight("ca34bb4e4797", "nlight_nb_4k4r", 4).start()
+    CSRO_Nlight("286af026507e", "nlight_nb_4k4r", 4).start()
+    CSRO_Nlight("da34bb4e5797", "nlight_nb_4k4r", 4).start()
+    CSRO_Nlight("186aa026607e", "nlight_nb_4k4r", 4).start()
+    CSRO_Dlight("45ad0904a51a", "dlight_csro_3k3scr").start()
+    CSRO_Dlight("46aa0904a614", "dlight_csro_3k3scr").start()
+    CSRO_Dlight("47af0904a715", "dlight_csro_3k3scr").start()
+    CSRO_Dlight("48ae0904a914", "dlight_csro_3k3scr").start()
+    CSRO_Motor("1dee0e45d498", "motor_nb_4k4r", 2).start()
+    CSRO_Motor("1dee0e45d408", "motor_nb_4k4r", 2).start()
+    CSRO_Motor("1dee0e45d4aa", "motor_nb_4k4r", 2).start()
+    CSRO_Motor("1dee0e45d4bb", "motor_nb_4k4r", 2).start()
+    CSRO_Motor("1dee0e45d49c", "motor_nb_4k4r", 2).start()
+    CSRO_Motor("1dee0e45d49d", "motor_nb_4k4r", 2).start()
+    CSRO_AirSystem("dd2faa48e5fc", "airsys_csro").start()
+    CSRO_AirSystem("dd2faa48e5fd", "airsys_csro").start()
+    CSRO_AirSystem("dd2faa48e5fe", "airsys_csro").start()
+    CSRO_AirSystem("dd2faa48e5ff", "airsys_csro").start()
