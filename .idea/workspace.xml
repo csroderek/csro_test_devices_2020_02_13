@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="78802772-0ae1-48b2-9d12-361bf4173952" name="Default Changelist" comment="" />
+    <list default="true" id="78802772-0ae1-48b2-9d12-361bf4173952" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csro_switch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csro_dlight.py" beforeDir="false" afterPath="$PROJECT_DIR$/csro_dlight.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csro_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/csro_simulator.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="csro_test_devices." />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -17,19 +38,26 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XjSwogJ0Yq283LLGvfp3TCLT1N" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.csro_simulator">
     <configuration name="csro_nlight" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="csro_test_devices" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -52,8 +80,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="csro_simulator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="csro_test_devices" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/csro_simulator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.csro_simulator" />
         <item itemvalue="Python.csro_nlight" />
       </list>
     </recent_temporary>
@@ -76,37 +126,46 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="524" y="329" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581559594650">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="524" y="329" key="#com.intellij.execution.impl.EditConfigurationsDialog/3840.239.864.1488/0.0.2560.1400@0.0.2560.1400" timestamp="1581559594650" />
-    <state width="1465" height="420" key="GridCell.Tab.0.bottom" timestamp="1581560640016">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1465" height="420" key="GridCell.Tab.0.bottom/3840.239.864.1488/0.0.2560.1400@0.0.2560.1400" timestamp="1581560640016" />
-    <state width="1465" height="420" key="GridCell.Tab.0.center" timestamp="1581560640016">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1465" height="420" key="GridCell.Tab.0.center/3840.239.864.1488/0.0.2560.1400@0.0.2560.1400" timestamp="1581560640016" />
-    <state width="1465" height="420" key="GridCell.Tab.0.left" timestamp="1581560640016">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1465" height="420" key="GridCell.Tab.0.left/3840.239.864.1488/0.0.2560.1400@0.0.2560.1400" timestamp="1581560640016" />
-    <state width="1465" height="420" key="GridCell.Tab.0.right" timestamp="1581560640016">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1465" height="420" key="GridCell.Tab.0.right/3840.239.864.1488/0.0.2560.1400@0.0.2560.1400" timestamp="1581560640016" />
-    <state x="573" y="316" key="SettingsEditor" timestamp="1581677098752">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="573" y="316" key="SettingsEditor/3840.239.864.1488/0.0.2560.1400@0.0.2560.1400" timestamp="1581677098752" />
-    <state x="976" y="528" key="com.intellij.ide.util.TipDialog" timestamp="1581558259327">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="976" y="528" key="com.intellij.ide.util.TipDialog/3840.239.864.1488/0.0.2560.1400@0.0.2560.1400" timestamp="1581558259327" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/csro_test_devices_$csro_nlight.coverage" NAME="csro_nlight Coverage Results" MODIFIED="1581560020739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../csro_test_devices" />
+  <component name="WindowStateProjectService">
+    <state x="1011" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595760145881">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1011" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1595760145881" />
+    <state x="980" y="292" key="#csro_simulator" timestamp="1595761241585">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="980" y="292" key="#csro_simulator/0.0.2560.1400@0.0.2560.1400" timestamp="1595761241585" />
+    <state width="1364" height="401" key="GridCell.Tab.0.bottom" timestamp="1595764928910">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1364" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1595764928910" />
+    <state width="1364" height="401" key="GridCell.Tab.0.center" timestamp="1595764928910">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1364" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1595764928910" />
+    <state width="1364" height="401" key="GridCell.Tab.0.left" timestamp="1595764928909">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1364" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1595764928909" />
+    <state width="1364" height="401" key="GridCell.Tab.0.right" timestamp="1595764928910">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1364" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1595764928910" />
+    <state x="782" y="345" key="SettingsEditor" timestamp="1595761264544">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="782" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1595761264544" />
   </component>
 </project>

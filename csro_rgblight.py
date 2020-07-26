@@ -3,13 +3,14 @@ import threading
 import json
 
 
-class CSRO_Dlight(threading.Thread):
+class CSRO_RGBlight(threading.Thread):
     def __init__(self, mac, dev_type):
         threading.Thread.__init__(self)
         self.device_type = dev_type
         self.mac = mac
         self.client = mqtt.Client()
-        self.dlight_bright = 0
+        self.rgblight_rgb = [0, 0, 0]
+        self.rgblight_bright = 0
 
     def on_connect(self, client, userdata, flags, rc):
         self.client.subscribe('csro/'+self.mac+"/" +
@@ -26,6 +27,9 @@ class CSRO_Dlight(threading.Thread):
             "on_cmd_type": "brightness",
             "pl_on": 1,
             "pl_off": 0,
+            "rgb_cmd_t": "~/set/rgb",
+            "rgb_stat_t": "~/state",
+            "rgb_val_tpl": "{{value_json.state.rgb}}",
             "stat_t": "~/state",
             "stat_val_tpl": "{{value_json.state.on}}",
             "avty_t": "~/available",
@@ -48,14 +52,20 @@ class CSRO_Dlight(threading.Thread):
         update = False
         if str(msg.topic) == str("csro/" + self.mac + "/" + self.device_type+"/set"):
             if msg.payload.decode('UTF-8') == "0":
-                self.dlight_bright = 0
+                self.rgblight_bright = 0
             elif msg.payload.decode('UTF-8') == "1":
-                self.dlight_bright = 10
+                self.rgblight_bright = 10
             update = True
         elif str(msg.topic) == str("csro/" + self.mac + "/" + self.device_type+"/set/bright"):
             if int(msg.payload.decode('UTF-8')) >= 0 and int(msg.payload.decode('UTF-8')) <= 10:
-                self.dlight_bright = int(msg.payload.decode('UTF-8'))
+                self.rgblight_bright = int(msg.payload.decode('UTF-8'))
                 update = True
+        elif str(msg.topic) == str("csro/" + self.mac + "/" + self.device_type+"/set/rgb"):
+            rgb_value_str = msg.payload.decode('UTF-8').split(",")
+            self.rgblight_rgb[0] = int(rgb_value_str[0])
+            self.rgblight_rgb[1] = int(rgb_value_str[1])
+            self.rgblight_rgb[2] = int(rgb_value_str[2])
+            update = True
         else:
             pass
         if update == True:
@@ -72,8 +82,9 @@ class CSRO_Dlight(threading.Thread):
     def update_status(self):
         state = {
             "state": {
-                "on":  1 if(self.dlight_bright > 0) else 0,
-                "bright": self.dlight_bright,
+                "on":  1 if(self.rgblight_bright > 0) else 0,
+                "bright": self.rgblight_bright,
+                "rgb": str(self.rgblight_rgb[0])+","+str(self.rgblight_rgb[1])+","+str(self.rgblight_rgb[2])
             }
         }
         state_message = json.dumps(state)
