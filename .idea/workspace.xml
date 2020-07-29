@@ -16,11 +16,20 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78802772-0ae1-48b2-9d12-361bf4173952" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csro_sensors.py" beforeDir="false" afterPath="$PROJECT_DIR$/csro_sensors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csro_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/csro_simulator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595767872869</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add sensors files">
+      <created>1596023738988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596023738988</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +151,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -144,7 +172,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add rgb and switch" />
-    <option name="LAST_COMMIT_MESSAGE" value="add rgb and switch" />
+    <MESSAGE value="add sensors files" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sensors files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1011" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595760145881">
@@ -155,29 +184,29 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="980" y="292" key="#csro_simulator/0.0.2560.1400@0.0.2560.1400" timestamp="1595761241585" />
-    <state width="1364" height="205" key="GridCell.Tab.0.bottom" timestamp="1595769469695">
+    <state width="1443" height="313" key="GridCell.Tab.0.bottom" timestamp="1596026461115">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1364" height="205" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1595769469695" />
-    <state width="1364" height="205" key="GridCell.Tab.0.center" timestamp="1595769469695">
+    <state width="1443" height="313" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1596026461115" />
+    <state width="1443" height="313" key="GridCell.Tab.0.center" timestamp="1596026461114">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1364" height="205" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1595769469695" />
-    <state width="1364" height="205" key="GridCell.Tab.0.left" timestamp="1595769469695">
+    <state width="1443" height="313" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1596026461114" />
+    <state width="1443" height="313" key="GridCell.Tab.0.left" timestamp="1596026461114">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1364" height="205" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1595769469695" />
-    <state width="1364" height="205" key="GridCell.Tab.0.right" timestamp="1595769469695">
+    <state width="1443" height="313" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1596026461114" />
+    <state width="1443" height="313" key="GridCell.Tab.0.right" timestamp="1596026461115">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1364" height="205" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1595769469695" />
+    <state width="1443" height="313" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1596026461115" />
     <state x="782" y="345" key="SettingsEditor" timestamp="1595761264544">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="782" y="345" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1595761264544" />
-    <state x="782" y="391" key="Vcs.Push.Dialog.v2" timestamp="1595767882121">
+    <state x="782" y="391" key="Vcs.Push.Dialog.v2" timestamp="1596023839501">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="782" y="391" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1595767882121" />
+    <state x="782" y="391" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1596023839501" />
   </component>
 </project>
